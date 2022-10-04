@@ -19,7 +19,7 @@
             <div class="headerRightContainer">
                 <!-- About us -->
 
-                <a class="headerLinks " href="<?php echo base_url(); ?>account/signup">Don't have an account? Sign Up</a>
+                <!-- <a class="headerLinks " href="<?php echo base_url(); ?>account/signup">Don't have an account? Sign Up</a> -->
                 <a class="ctaButton " href="<?php echo base_url(); ?>account/signin">Sign In</a>
 
             </div>
