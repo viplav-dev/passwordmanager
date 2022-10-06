@@ -28,6 +28,30 @@ class AccountModel extends CI_Model
         $result = $query->row_array();
         return $result;
     }
-    
-    
+    public function createResetLink($email, $token)
+    {
+        $time = time() + 600;// 10 minutes validity
+        $this->db->where('userEmail', $email);
+        $this->db->update('users', array('userResetToken' => $token, 'userResetExpire' => $time));
+        return $this->db->affected_rows();
+    }
+    public function checkToken($email, $token)
+    {
+        $this->db->select('userResetExpire');
+        $this->db->from('users');
+        $this->db->where('userEmail', $email);
+        $this->db->where('userResetToken', $token);
+        $query = $this->db->get();
+        $result = $query->row_array();
+        if ($result['userResetExpire'] > time()) {
+            return true;
+        }
+        return false;
+    }
+    public function updatePassword($email, $hash)
+    {
+        $this->db->where('userEmail', $email);
+        $this->db->update('users', array('userHash' => $hash, 'userResetToken' => '', 'userResetExpire' => ''));
+        return $this->db->affected_rows();
+    }
 }

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo !empty($title) ? $title ." |":""  ?>  Password Manager</title>
     <link rel="stylesheet" href="<?php echo base_url("assets/css/login_header.min.css"); ?>">
-    
+    <script src="https://kit.fontawesome.com/5e1d362a8f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
             <div class="headerRightContainer">
                 <!-- About us -->
 
-                <a class="headerLinks " href="<?php echo base_url(); ?>account/signup">Don't have an account? Sign Up</a>
+                <!-- <a class="headerLinks " href="<?php echo base_url(); ?>account/signup">Don't have an account? Sign Up</a> -->
                 <a class="ctaButton " href="<?php echo base_url(); ?>account/signin">Sign In</a>
 
             </div>

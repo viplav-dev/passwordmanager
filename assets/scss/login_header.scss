@@ -41,7 +41,18 @@ header{
     top:0;
     text-decoration: none;
 }
-
+a{
+    text-decoration: none;
+    color: $primaryblue;
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: underline;
+    color: $secondaryblue;
+}
+i{
+    margin-right: 5px;
+}
 
 .headerContainer{
 
@@ -184,7 +195,7 @@ header{
                 border: 1px solid #ced4da;
                 border-radius: 0.25rem;
                 transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-                margin-bottom: 1rem;
+                margin-bottom: 10px;
             }
             .signInInput:focus{
                 color: #495057;
@@ -204,9 +215,11 @@ header{
                 width: 100%;
                 display: flex;
                 flex-direction: row;
-                justify-content: end;
+                justify-content: space-between;
+                align-items:  center;
             .signInBtn{
                 cursor: pointer;
+                margin:20px 0px;
 
                 text-decoration: none;
                 color: $primaryblue;
@@ -227,7 +240,12 @@ header{
     
     
             }
-           
+           .signInBtn:disabled{
+            cursor:not-allowed;
+            color:$primarygray!important;
+            background-color: $primarywhite!important;
+            border-color: $primarygray!important;
+           }
             .signInBtn:hover{
                 color: #fff;
                 background-color: $primaryblue;

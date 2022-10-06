@@ -19,7 +19,13 @@ function messages()
         'passwordDeleted' => 'Password deleted successfully',
         'passwordNotDeleted' => 'Password not deleted',
         'checkDetails' => 'Please check details',
-        'passwordNotFound' => 'Password not found'
+        'passwordNotFound' => 'Password not found',
+        'resetLinkNotSent' => 'Reset link not sent',
+        'resetLinkSent' => 'Reset link sent successfully',
+        'invalidLink' => 'This link is either invalid or has expired.',
+        'passwordNotMatch' => 'Password does not match',
+        'passwordNotChanged' => 'It\'s not you, it\'s us. Please try again later.',
+        'passwordChanged' => 'Password changed successfully',
 
     );
 
