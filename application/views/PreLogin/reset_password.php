@@ -37,7 +37,7 @@
                 <div id="passwordCheck"></div>
                 <input type="hidden" name="token" value="<?php echo $this->input->get('token'); ?>">
                 <input type="hidden" name="email" value="<?php echo $this->input->get('email'); ?>">
-                <input type="submit" style="width: fit-content;" class="signInBtn" id="resetPasswordBtn" class="btn btn-lg btn-success btn-block" value="Reset Password" disabled />
+                <input type="submit" style="width: fit-content;" class="signInBtn" id="resetPasswordBtn" class="btn btn-lg btn-success btn-block" onclick="this.form.submit();this.disabled = true;" value="Reset Password" disabled />
             </div>
             </form>
         </div>

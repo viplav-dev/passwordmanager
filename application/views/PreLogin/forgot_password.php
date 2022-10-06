@@ -21,7 +21,7 @@
 
             <div class="signInBtnContainer" style="justify-content:end!important;">
 
-                <input type="submit" style="width:fit-content!important ;" class="signInBtn" class="btn btn-lg btn-success btn-block" value="Send Link" />
+                <input type="submit" onclick="this.form.submit();this.disabled = true;" style="width:fit-content!important ;" class="signInBtn" class="btn btn-lg btn-success btn-block" value="Send Link" />
             </div>
             </form>
         </div>

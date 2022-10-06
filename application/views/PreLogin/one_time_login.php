@@ -20,7 +20,7 @@
 
             <div class="signInBtnContainer" style="justify-content:end!important;">
 
-                <input type="submit" id="signInBtn" style="width:fit-content!important ;" onsubmit="document.getElementById('signInBtn').disabled=false;" class="signInBtn" class="btn btn-lg btn-success btn-block" value="Send Link" />
+                <input type="submit" id="signInBtn" style="width:fit-content!important ;" onclick="this.form.submit();this.disabled = true;" class="signInBtn" class="btn btn-lg btn-success btn-block" value="Send Link" />
             </div>
             </form>
         </div>
@@ -28,6 +28,7 @@
     </div>
 </body>
 <script>
+   
     function show_password() {
         var x = document.getElementById("password");
         var y = document.getElementsByClassName("showPasswordBtn");

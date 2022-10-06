@@ -64,7 +64,7 @@ echo form_open(base_url("password/add"));
             <textarea class="form-control" id="notes" name="notes" rows="3"></textarea>
         </div>
         <div class="d-grid">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" onclick="this.form.submit();this.disabled = true;" class="btn btn-primary">Submit</button>
         </div>
     </div>
 
