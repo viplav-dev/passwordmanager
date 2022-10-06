@@ -53,6 +53,11 @@ a:hover{
 i{
     margin-right: 5px;
 }
+hr
+{
+    border:none;
+    border-top: 1px dotted #ccc;
+}
 
 .headerContainer{
 
@@ -172,6 +177,38 @@ i{
                 text-align: left;
 
             }
+            .oneTimeLoginBtn{
+                cursor: pointer;
+                margin:10px 0px;
+                width: 100%;
+                padding: .375rem .75rem;
+                text-decoration: none;
+                color: $primaryblue;
+                background-color: $primarywhite;
+                border-color: $primaryblue;
+                display: inline-block;
+                font-weight: 700;
+                text-align: center;
+                vertical-align: middle;
+                user-select: none;
+                border-radius: 5px;
+                padding: .375rem .75rem;
+                font-size: 1rem;
+                line-height: 1.5;
+                border:2px solid $primaryblue;
+                transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    
+
+            }
+            .oneTimeLoginBtn:hover{
+                color: #fff;
+                background-color: $primaryblue;}
+    
+            .oneTimeLoginBtn:active{
+                color: #fff;
+                background-color: $secondaryblue;
+                border:2px solid $secondaryblue
+           }
             label{
                 font-size: 1rem;
                 font-weight: 700;

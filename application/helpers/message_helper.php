@@ -16,16 +16,18 @@ function messages()
         'passwordNotAdded' => 'Password not added',
         'passwordUpdated' => 'Password updated successfully',
         'passwordNotUpdated' => 'Password not updated',
-        'passwordDeleted' => 'Password deleted successfully',
+        'passwordDeleted' => 'Your password is deleted successfully',
         'passwordNotDeleted' => 'Password not deleted',
-        'checkDetails' => 'Please check details',
-        'passwordNotFound' => 'Password not found',
+        'checkDetails' => 'Oh! Please check your details',
+        'passwordNotFound' => 'Oh Snap! Password not found',
         'resetLinkNotSent' => 'Reset link not sent',
         'resetLinkSent' => 'Reset link sent successfully',
         'invalidLink' => 'This link is either invalid or has expired.',
         'passwordNotMatch' => 'Password does not match',
         'passwordNotChanged' => 'It\'s not you, it\'s us. Please try again later.',
-        'passwordChanged' => 'Password changed successfully',
+        'passwordChanged' => 'Yay! You have successfully changed your password.',
+        'loginSuccessful' => 'Yay! You have successfully logged in.',
+        'alreadyLoggedIn'  => 'Uh Oh! Active session found. <br> Please logout to perform this operation.',
 
     );
 
