@@ -10,7 +10,7 @@ application/logs/*
 
 
 tests/mocks/database/ci_test.sqlite
-
+application/config/email.php
 user_guide_src/build/*
 user_guide_src/cilexer/build/*
 user_guide_src/cilexer/dist/*
