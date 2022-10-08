@@ -22,11 +22,11 @@ class Deploy extends CI_Controller
         // array of commands
         $commands = array(
             
-            'git pull',
-            'git status',
-            'git submodule sync',
-            'git submodule update',
-            'git submodule status',
+            'cd /var/www/passwordmanager git pull',
+            'cd /var/www/passwordmanager git status',
+            'cd /var/www/passwordmanager git submodule sync',
+            'cd /var/www/passwordmanager git submodule update',
+            'cd /var/www/passwordmanager git submodule status',
         );
 
         // exec commands
