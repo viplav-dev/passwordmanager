@@ -21,7 +21,6 @@ class Deploy extends CI_Controller
 
         // array of commands
         $commands = array(
-            'cd /var/www/passwordmanager',
             'echo $PWD',
             'whoami',
             'git pull',
