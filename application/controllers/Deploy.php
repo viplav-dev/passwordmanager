@@ -21,8 +21,7 @@ class Deploy extends CI_Controller
 
         // array of commands
         $commands = array(
-            'echo $PWD',
-            'whoami',
+            
             'git pull',
             'git status',
             'git submodule sync',
