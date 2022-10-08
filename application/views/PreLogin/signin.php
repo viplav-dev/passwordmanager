@@ -33,7 +33,7 @@
             <div class="signInBtnContainer">
                 <a class="showPasswordBtn" href="<?php echo base_url("account/forgotPassword") ?>"> Forgot Password?</a>
                 <!-- Change this to a button or input when using this as a form -->
-                <input type="submit" onclick="this.form.submit();this.disabled = true;" class="signInBtn" class="btn btn-lg btn-success btn-block" value="Login" />
+                <input type="submit" onsubmit="this.form.submit();this.disabled = true;" class="signInBtn" class="btn btn-lg btn-success btn-block" value="Login" />
             </div>
             </form>
         </div>
