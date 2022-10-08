@@ -57,6 +57,8 @@ class Deploy extends CI_Controller
 </body>
 </html>
 		';
+        echo "hello";
     }
     
+
 }
