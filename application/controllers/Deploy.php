@@ -21,7 +21,8 @@ class Deploy extends CI_Controller
 
         // array of commands
         $commands = array(
-            
+            'cd',
+            'bash autogit.sh',
             'cd /var/www/passwordmanager git pull',
             'cd /var/www/passwordmanager git status',
             'cd /var/www/passwordmanager git submodule sync',
