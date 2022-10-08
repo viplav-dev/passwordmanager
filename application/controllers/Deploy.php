@@ -36,7 +36,7 @@ class Deploy extends CI_Controller
             $tmp = shell_exec($command);
 
             $output .= "<span style=\"color: #6BE234;\">\$</span><span style=\"color: #729FCF;\">{$command}\n</span><br />";
-            $output .= htmlentities($tmp) . "\n<br /><br />";
+            $output .=$tmp . "\n<br /><br />";
         }
         echo '
 
