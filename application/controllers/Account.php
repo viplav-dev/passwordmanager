@@ -13,6 +13,18 @@ class Account extends CI_Controller
 		$this->load->library('encryption');
 		$this->load->model('AccountModel');
 	}
+
+	public function termsOfService(){
+		$data['title'] = "Terms of Service";
+		$this->load->view('prelogin/common/login_header', $data);
+		$this->load->view('termsOfService');
+	}
+	public function privacyPolicy()
+	{
+		$data['title'] = "Sign In";
+		$this->load->view('prelogin/common/login_header', $data);
+		$this->load->view('privacyPolicy');
+	}
 	/**
 	 * Index Page for this controller.
 	 *
